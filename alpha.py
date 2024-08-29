@@ -42,8 +42,6 @@ soup = BeautifulSoup(driver.page_source, 'html.parser')
 all_div_tag = soup.find_all('div', 'photo-list-photo-container')
 
 print(len(all_div_tag))
-
-# output - 394
     
 card = all_div_tag[0]
 print(card)
